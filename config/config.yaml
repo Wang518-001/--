@@ -281,7 +281,7 @@ notification:
 
     email:
       from: "819078775@qq.com"        # 发件人邮箱地址
-      password: ""                    # QQ邮箱SMTP授权码（需自行获取）
+      password: "teyfifbskepqbecb"     # QQ邮箱SMTP授权码
       to: "819078775@qq.com"          # 收件人邮箱
       smtp_server: "smtp.qq.com"      # SMTP 服务器
       smtp_port: "465"                # SMTP 端口（SSL）
