@@ -263,6 +263,8 @@ notification:
   enabled: true                       # 是否启用通知功能（true=启用, false=关闭）—— 总开关
                                       # 开启 schedule 后此项仍为总开关：false=永远不推送，true=由调度控制
 
+  default_notify_method: "email"      # 默认通知渠道（email/feishu/dingtalk/telegram/ntfy/bark/slack/generic_webhook）
+
   # 推送渠道配置
   channels:
     feishu:
@@ -284,7 +286,7 @@ notification:
       password: "teyfifbskepqbecb"     # QQ邮箱SMTP授权码
       to: "819078775@qq.com"          # 收件人邮箱
       smtp_server: "smtp.qq.com"      # SMTP 服务器
-      smtp_port: "465"                # SMTP 端口（SSL）
+      smtp_port: 465                  # SMTP 端口（SSL）
 
     ntfy:
       server_url: "https://ntfy.sh"   # ntfy 服务器地址（可改为自托管）
